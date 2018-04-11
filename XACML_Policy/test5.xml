@@ -1,0 +1,47 @@
+<Rule RuleId="c01d7519-be21-4985-88d8-10941f44590a" Effect="Permit">
+	<Description>Allow if resource is online, password is correct, time between 9 and 17, reputation is >= 5, date between 10 and 15, or role is administrator</Description>
+	<Target>
+		<AnyOf>
+			<AllOf>
+                <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:boolean-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+					<AttributeDesignator Issuer="0x50" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:status" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#boolean"/>
+				</Match>
+                <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:boolean-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+					<AttributeDesignator Issuer="0x51" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:check-maintenance" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#boolean"/>
+				</Match>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:time-greater-than">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">09:00:00</AttributeValue>
+					<AttributeDesignator Issuer="0x51" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" AttributeId="urn:oasis:names:tc:xacml:1.0:environment:current-time" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#time"/>
+				</Match>
+                <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:time-less-than">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:00:00</AttributeValue>
+					<AttributeDesignator Issuer="0x52" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" AttributeId="urn:oasis:names:tc:xacml:1.0:environment:current-time" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#time"/>
+				</Match>
+                <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:integer-greater-than-or-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">5</AttributeValue>
+					<AttributeDesignator Issuer="0x53" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" AttributeId="urn:oasis:names:tc:xacml:1.0:subject:get-reputation" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+				</Match>
+			</AllOf>
+			<AllOf>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administator</AttributeValue>
+					<AttributeDesignator Issuer="0x54" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" AttributeId="urn:oasis:names:tc:xacml:1.0:subject:get-role" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+				</Match>
+			</AllOf>
+		</AnyOf>
+		<AnyOf>
+			<AllOf>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:date-greater-than-or-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">10</AttributeValue>
+					<AttributeDesignator Issuer="0x55" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:get-date-day" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#date"/>
+				</Match>
+                <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:date-less-than-or-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">15</AttributeValue>
+					<AttributeDesignator Issuer="0x55" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" AttributeId="urn:oasis:names:tc:xacml:1.0:environment:get-date-day" MustBePresent="false" DataType="http://www.w3.org/2001/XMLSchema#date"/>
+				</Match>
+			</AllOf>
+		</AnyOf>
+	</Target>
+</Rule>

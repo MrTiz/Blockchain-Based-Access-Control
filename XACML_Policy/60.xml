@@ -1,0 +1,353 @@
+<Rule Effect="Permit" RuleId="26366">
+  <Description>test</Description>
+  <Target>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">res.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:resource-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:status" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:maintenance" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">prova.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:integer-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:reputation" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#integer" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:role" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+	<AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">res.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:resource-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:status" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:maintenance" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">prova.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:integer-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:reputation" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#integer" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:role" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+	<AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">res.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:resource-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:status" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:maintenance" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">prova.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:integer-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:reputation" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#integer" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:role" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+	<AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">res.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:resource-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:status" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:maintenance" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">prova.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:integer-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:reputation" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#integer" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:role" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+	<AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">res.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:resource-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:status" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:maintenance" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">prova.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:integer-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:reputation" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#integer" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:role" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+	<AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">res.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:resource-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:status" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:resource:maintenance" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0x55ac28eb8040399e2e971b6be679b1318e9956e1" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">prova.org</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:integer-greater-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">10</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:reputation" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#integer" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-less-than-or-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:subject:role" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0x41fffc4b451588cb2790809cd1c008913a135e42" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+  </Target>
+</Rule>

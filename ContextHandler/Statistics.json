@@ -1,0 +1,476 @@
+[
+  {
+    "Number of rules": 1,
+    "Average": 26762,
+    "Statistics": [
+      {
+        "Estimated gas": 109647,
+        "Test duration": 18558,
+        "Used gas": 109647
+      },
+      {
+        "Estimated gas": 94647,
+        "Test duration": 34967,
+        "Used gas": 94647
+      }
+    ]
+  },
+  {
+    "Number of rules": 2,
+    "Average": 74079,
+    "Statistics": [
+      {
+        "Estimated gas": 111049,
+        "Test duration": 123767,
+        "Used gas": 111049
+      },
+      {
+        "Estimated gas": 96049,
+        "Test duration": 24391,
+        "Used gas": 96049
+      }
+    ]
+  },
+  {
+    "Number of rules": 3,
+    "Average": 107539,
+    "Statistics": [
+      {
+        "Estimated gas": 111088,
+        "Test duration": 173466,
+        "Used gas": 111088
+      },
+      {
+        "Estimated gas": 96088,
+        "Test duration": 41613,
+        "Used gas": 96088
+      }
+    ]
+  },
+  {
+    "Number of rules": 4,
+    "Average": 53648,
+    "Statistics": [
+      {
+        "Estimated gas": 112384,
+        "Test duration": 45499,
+        "Used gas": 112384
+      },
+      {
+        "Estimated gas": 97384,
+        "Test duration": 61798,
+        "Used gas": 97384
+      }
+    ]
+  },
+  {
+    "Number of rules": 5,
+    "Average": 88511,
+    "Statistics": [
+      {
+        "Estimated gas": 113850,
+        "Test duration": 52221,
+        "Used gas": 113850
+      },
+      {
+        "Estimated gas": 98850,
+        "Test duration": 124802,
+        "Used gas": 98850
+      }
+    ]
+  },
+  {
+    "Number of rules": 6,
+    "Average": 132874,
+    "Statistics": [
+      {
+        "Estimated gas": 113933,
+        "Test duration": 141981,
+        "Used gas": 113933
+      },
+      {
+        "Estimated gas": 98933,
+        "Test duration": 123768,
+        "Used gas": 98933
+      }
+    ]
+  },
+  {
+    "Number of rules": 7,
+    "Average": 161230,
+    "Statistics": [
+      {
+        "Estimated gas": 113950,
+        "Test duration": 217998,
+        "Used gas": 113950
+      },
+      {
+        "Estimated gas": 98950,
+        "Test duration": 104463,
+        "Used gas": 98950
+      }
+    ]
+  },
+  {
+    "Number of rules": 8,
+    "Average": 63959,
+    "Statistics": [
+      {
+        "Estimated gas": 114016,
+        "Test duration": 70880,
+        "Used gas": 114016
+      },
+      {
+        "Estimated gas": 99016,
+        "Test duration": 57038,
+        "Used gas": 99016
+      }
+    ]
+  },
+  {
+    "Number of rules": 9,
+    "Average": 161777,
+    "Statistics": [
+      {
+        "Estimated gas": 115523,
+        "Test duration": 147849,
+        "Used gas": 115523
+      },
+      {
+        "Estimated gas": 100523,
+        "Test duration": 175706,
+        "Used gas": 100523
+      }
+    ]
+  },
+  {
+    "Number of rules": 10,
+    "Average": 82511,
+    "Statistics": [
+      {
+        "Estimated gas": 116986,
+        "Test duration": 61002,
+        "Used gas": 116986
+      },
+      {
+        "Estimated gas": 101986,
+        "Test duration": 104020,
+        "Used gas": 101986
+      }
+    ]
+  },
+  {
+    "Number of rules": 20,
+    "Average": 121497,
+    "Statistics": [
+      {
+        "Estimated gas": 126477,
+        "Test duration": 80660,
+        "Used gas": 126477
+      },
+      {
+        "Estimated gas": 111477,
+        "Test duration": 162334,
+        "Used gas": 111477
+      }
+    ]
+  },
+  {
+    "Number of rules": 30,
+    "Average": 138044,
+    "Statistics": [
+      {
+        "Estimated gas": 136782,
+        "Test duration": 231062,
+        "Used gas": 136782
+      },
+      {
+        "Estimated gas": 121782,
+        "Test duration": 45027,
+        "Used gas": 121782
+      }
+    ]
+  },
+  {
+    "Number of rules": 40,
+    "Average": 39030,
+    "Statistics": [
+      {
+        "Estimated gas": 148935,
+        "Test duration": 38727,
+        "Used gas": 148935
+      },
+      {
+        "Estimated gas": 133935,
+        "Test duration": 39333,
+        "Used gas": 133935
+      }
+    ]
+  },
+  {
+    "Number of rules": 50,
+    "Average": 107490,
+    "Statistics": [
+      {
+        "Estimated gas": 162100,
+        "Test duration": 66349,
+        "Used gas": 162100
+      },
+      {
+        "Estimated gas": 147100,
+        "Test duration": 148632,
+        "Used gas": 147100
+      }
+    ]
+  },
+  {
+    "Number of rules": 60,
+    "Average": 42700,
+    "Statistics": [
+      {
+        "Estimated gas": 177443,
+        "Test duration": 40543,
+        "Used gas": 177443
+      },
+      {
+        "Estimated gas": 162443,
+        "Test duration": 44857,
+        "Used gas": 162443
+      }
+    ]
+  },
+  {
+    "Number of rules": 70,
+    "Average": 120864,
+    "Statistics": [
+      {
+        "Estimated gas": 193996,
+        "Test duration": 102634,
+        "Used gas": 193996
+      },
+      {
+        "Estimated gas": 178996,
+        "Test duration": 139095,
+        "Used gas": 178996
+      }
+    ]
+  },
+  {
+    "Number of rules": 80,
+    "Average": 52368,
+    "Statistics": [
+      {
+        "Estimated gas": 211055,
+        "Test duration": 36182,
+        "Used gas": 211055
+      },
+      {
+        "Estimated gas": 196055,
+        "Test duration": 68555,
+        "Used gas": 196055
+      }
+    ]
+  },
+  {
+    "Number of rules": 90,
+    "Average": 58340,
+    "Statistics": [
+      {
+        "Estimated gas": 229522,
+        "Test duration": 31846,
+        "Used gas": 229522
+      },
+      {
+        "Estimated gas": 214522,
+        "Test duration": 84834,
+        "Used gas": 214522
+      }
+    ]
+  },
+  {
+    "Number of rules": 100,
+    "Average": 40810,
+    "Statistics": [
+      {
+        "Estimated gas": 247769,
+        "Test duration": 56029,
+        "Used gas": 247769
+      },
+      {
+        "Estimated gas": 232769,
+        "Test duration": 25591,
+        "Used gas": 232769
+      }
+    ]
+  },
+  {
+    "Number of rules": 110,
+    "Average": 90773,
+    "Statistics": [
+      {
+        "Estimated gas": 268458,
+        "Test duration": 90936,
+        "Used gas": 268458
+      },
+      {
+        "Estimated gas": 253458,
+        "Test duration": 90611,
+        "Used gas": 253458
+      }
+    ]
+  },
+  {
+    "Number of rules": 120,
+    "Average": 194528,
+    "Statistics": [
+      {
+        "Estimated gas": 290379,
+        "Test duration": 194528,
+        "Used gas": 290379
+      }
+    ]
+  },
+  {
+    "Number of rules": 130,
+    "Average": 97457,
+    "Statistics": [
+      {
+        "Estimated gas": 312322,
+        "Test duration": 97457,
+        "Used gas": 312322
+      }
+    ]
+  },
+  {
+    "Number of rules": 140,
+    "Average": 29347,
+    "Statistics": [
+      {
+        "Estimated gas": 339105,
+        "Test duration": 29347,
+        "Used gas": 339105
+      }
+    ]
+  },
+  {
+    "Number of rules": 150,
+    "Average": 13963,
+    "Statistics": [
+      {
+        "Estimated gas": 365976,
+        "Test duration": 13963,
+        "Used gas": 365976
+      }
+    ]
+  },
+  {
+    "Number of rules": 160,
+    "Average": 79376,
+    "Statistics": [
+      {
+        "Estimated gas": 393419,
+        "Test duration": 79376,
+        "Used gas": 393419
+      }
+    ]
+  },
+  {
+    "Number of rules": 170,
+    "Average": 78423,
+    "Statistics": [
+      {
+        "Estimated gas": 422028,
+        "Test duration": 78423,
+        "Used gas": 422028
+      }
+    ]
+  },
+  {
+    "Number of rules": 171,
+    "Average": 80076,
+    "Statistics": [
+      {
+        "Estimated gas": 426984,
+        "Test duration": 80076,
+        "Used gas": 426984
+      }
+    ]
+  },
+  {
+    "Number of rules": 172,
+    "Average": 138290,
+    "Statistics": [
+      {
+        "Estimated gas": 431301,
+        "Test duration": 138290,
+        "Used gas": 431301
+      }
+    ]
+  },
+  {
+    "Number of rules": 173,
+    "Average": 26156,
+    "Statistics": [
+      {
+        "Estimated gas": 431384,
+        "Test duration": 26156,
+        "Used gas": 431384
+      }
+    ]
+  },
+  {
+    "Number of rules": 174,
+    "Average": 147428,
+    "Statistics": [
+      {
+        "Estimated gas": 434953,
+        "Test duration": 147428,
+        "Used gas": 434953
+      }
+    ]
+  },
+  {
+    "Number of rules": 175,
+    "Average": 23636,
+    "Statistics": [
+      {
+        "Estimated gas": 439889,
+        "Test duration": 23636,
+        "Used gas": 439889
+      }
+    ]
+  },
+  {
+    "Number of rules": 176,
+    "Average": 29335,
+    "Statistics": [
+      {
+        "Estimated gas": 442084,
+        "Test duration": 29335,
+        "Used gas": 442084
+      }
+    ]
+  },
+  {
+    "Number of rules": 177,
+    "Average": 18881,
+    "Statistics": [
+      {
+        "Estimated gas": 444059,
+        "Test duration": 18881,
+        "Used gas": 444059
+      }
+    ]
+  },
+  {
+    "Number of rules": 178,
+    "Average": 64131,
+    "Statistics": [
+      {
+        "Estimated gas": 445093,
+        "Test duration": 64131,
+        "Used gas": 445093
+      }
+    ]
+  }
+]

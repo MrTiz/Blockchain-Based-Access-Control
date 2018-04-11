@@ -1,0 +1,70 @@
+<Rule RuleId="c01d7519-be21-4985-88d8-10941f44590a" Effect="Permit">
+	<Description>Consente l'accesso qualora siano almeno le 09:00:00 e sia lunedì, oppure qualora siano almeno le 12:30:00 e la risorsa non sia occupata, oppure nel caso in cui l'utente che vuole effettuare l'accesso alla risorsa sia un amministratore</Description>
+	<Target>
+		<AnyOf>
+			<AllOf>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:time-greater-than">
+					<AttributeValue 
+					    DataType="http://www.w3.org/2001/XMLSchema#time">09:00:00
+					</AttributeValue>
+					<AttributeDesignator 
+					    Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" 
+					    AttributeId="urn:oasis:names:tc:xacml:1.0:environment:current-time" 
+					    DataType="http://www.w3.org/2001/XMLSchema#time"
+					    Issuer="0x1eaa7a7a4de63540b2ad66907254f194011edc10"
+					    MustBePresent="false"/>
+				</Match>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue 
+					    DataType="http://www.w3.org/2001/XMLSchema#string">monday
+					</AttributeValue>
+					<AttributeDesignator 
+					    Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" 
+					    AttributeId="urn:oasis:names:tc:xacml:1.0:environment:current-day"
+					    DataType="http://www.w3.org/2001/XMLSchema#string"
+					    Issuer="0x1eaa7a7a4de63540b2ad66907254f194011edc10"
+					    MustBePresent="false"/>
+				</Match>
+			</AllOf>
+			<AllOf>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:time-greater-than">
+					<AttributeValue 
+					    DataType="http://www.w3.org/2001/XMLSchema#time">12:30:00
+					</AttributeValue>
+					<AttributeDesignator 
+					    Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" 
+					    AttributeId="urn:oasis:names:tc:xacml:1.0:environment:current-time" 
+					    DataType="http://www.w3.org/2001/XMLSchema#time"
+					    Issuer="0x1eaa7a7a4de63540b2ad66907254f194011edc10"
+					    MustBePresent="false"/>
+				</Match>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:boolean-equal">
+					<AttributeValue 
+					    DataType="http://www.w3.org/2001/XMLSchema#boolean">false
+					</AttributeValue>
+					<AttributeDesignator 
+					    Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" 
+					    AttributeId="urn:oasis:names:tc:xacml:1.0:resource:isBusy" 
+					    DataType="http://www.w3.org/2001/XMLSchema#boolean"
+					    Issuer="0x5e02dd7d66075f9af6367b0c94915ef2e6e30e59"
+					    MustBePresent="false"/>
+				</Match>
+			</AllOf>
+		</AnyOf>
+		<AnyOf>
+			<AllOf>
+				<Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue 
+					    DataType="http://www.w3.org/2001/XMLSchema#string">administrator
+					</AttributeValue>
+					<AttributeDesignator 
+					    Category="urn:oasis:names:tc:xacml:3.0:attribute-category:subject" 
+					    AttributeId="urn:oasis:names:tc:xacml:1.0:subject:role" 
+					    DataType="http://www.w3.org/2001/XMLSchema#string"
+					    Issuer="0x9d2a6fea22ba5ea0a0b1cdc8453451c007defea1"
+					    MustBePresent="false"/>
+				</Match>
+			</AllOf>
+		</AnyOf>
+	</Target>
+</Rule>

@@ -1,0 +1,31 @@
+<Rule Effect="Permit" RuleId="82415">
+  <Description>test</Description>
+  <Target>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:date-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#date" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:time-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#time">17:39</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#time" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:boolean-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">true</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:hot" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#boolean" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+    <AnyOf>
+      <AllOf>
+        <Match MatchId="urn:oasis:names:tc:xacml:3.0:function:string-equal">
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17:39-26/06/2017</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:3.0:environment:date-time" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" Issuer="0xff60e19495aa6a93f6e0ca3c02e19666899ce141" MustBePresent="true"/>
+        </Match>
+      </AllOf>
+    </AnyOf>
+  </Target>
+</Rule>

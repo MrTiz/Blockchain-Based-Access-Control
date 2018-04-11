@@ -1,0 +1,17 @@
+<Rule RuleId="urn:oasis:names:tc:xacml:3.0:example:SimpleRule1" Effect="Permit">
+      <Description> Any subject with an e-mail name in the med.example.com domain can perform any action on any resource. </Description>
+      <Target>
+         <AnyOf>
+            <AllOf>
+               <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">med.example.com</AttributeValue>
+                  <AttributeDesignator MustBePresent="false"
+                                       Category="urn:oasis:names:tc:xacml:1.0:subject-category:subject"
+                                       AttributeId="urn:oasis:names:tc:xacml:1.0:subject:subject-id"
+                                       DataType="urn:oasis:names:tc:xacml:1.0:data-type:string"
+                                       Issuer = "prova"/>
+               </Match>
+            </AllOf>
+         </AnyOf>
+      </Target>
+   </Rule>
