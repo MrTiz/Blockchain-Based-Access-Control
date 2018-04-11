@@ -1,0 +1,592 @@
+[
+  {
+    "Number of rules": 1,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "201859",
+          "Duration": 31687,
+          "Used gas": "201859"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "304016",
+          "Duration": 56528,
+          "Used gas": "304016"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 2,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "204203",
+          "Duration": 93379,
+          "Used gas": "204203"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "337061",
+          "Duration": 127787,
+          "Used gas": "337061"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 3,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "239551",
+          "Duration": 7037,
+          "Used gas": "239551"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "373545",
+          "Duration": 118179,
+          "Used gas": "373545"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 4,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "269348",
+          "Duration": 38783,
+          "Used gas": "269348"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "417052",
+          "Duration": 103530,
+          "Used gas": "417052"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 5,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "321441",
+          "Duration": 40825,
+          "Used gas": "321441"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "439270",
+          "Duration": 97787,
+          "Used gas": "439270"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 6,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "351365",
+          "Duration": 30850,
+          "Used gas": "351365"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "462681",
+          "Duration": 152102,
+          "Used gas": "462681"
+        }
+      },
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "351365",
+          "Duration": 33109,
+          "Used gas": "351365"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "462681",
+          "Duration": 116448,
+          "Used gas": "462681"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 7,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "381412",
+          "Duration": 158429,
+          "Used gas": "381412"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "494546",
+          "Duration": 33717,
+          "Used gas": "494546"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 8,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "445245",
+          "Duration": 51764,
+          "Used gas": "445245"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "537337",
+          "Duration": 21113,
+          "Used gas": "537337"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 9,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "478450",
+          "Duration": 63857,
+          "Used gas": "478450"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "573350",
+          "Duration": 75400,
+          "Used gas": "573350"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 10,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "511783",
+          "Duration": 148811,
+          "Used gas": "511783"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "616397",
+          "Duration": 45135,
+          "Used gas": "616397"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 20,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "542312",
+          "Duration": 27693,
+          "Used gas": "542312"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "860352",
+          "Duration": 44433,
+          "Used gas": "860352"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 30,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "571682",
+          "Duration": 32052,
+          "Used gas": "571682"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "1104310",
+          "Duration": 68187,
+          "Used gas": "1104310"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 40,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "601245",
+          "Duration": 48538,
+          "Used gas": "601245"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "1348329",
+          "Duration": 159437,
+          "Used gas": "1348329"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 50,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "630750",
+          "Duration": 133733,
+          "Used gas": "630750"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "1592358",
+          "Duration": 95948,
+          "Used gas": "1592358"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 60,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "660249",
+          "Duration": 60617,
+          "Used gas": "660249"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "1836326",
+          "Duration": 66413,
+          "Used gas": "1836326"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 70,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "689306",
+          "Duration": 122879,
+          "Used gas": "689306"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "2080354",
+          "Duration": 90214,
+          "Used gas": "2080354"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 80,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "719252",
+          "Duration": 112517,
+          "Used gas": "719252"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "2324329",
+          "Duration": 92231,
+          "Used gas": "2324329"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 90,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "748757",
+          "Duration": 116740,
+          "Used gas": "748757"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "2568427",
+          "Duration": 32252,
+          "Used gas": "2568427"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 100,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "777616",
+          "Duration": 79808,
+          "Used gas": "777616"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "2812536",
+          "Duration": 65103,
+          "Used gas": "2812536"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 110,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "807755",
+          "Duration": 125418,
+          "Used gas": "807755"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "3056585",
+          "Duration": 216794,
+          "Used gas": "3056585"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 120,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "837261",
+          "Duration": 175642,
+          "Used gas": "837261"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "3300565",
+          "Duration": 44534,
+          "Used gas": "3300565"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 130,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "866760",
+          "Duration": 52016,
+          "Used gas": "866760"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "3544619",
+          "Duration": 252785,
+          "Used gas": "3544619"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 140,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "896265",
+          "Duration": 57973,
+          "Used gas": "896265"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "3788741",
+          "Duration": 60112,
+          "Used gas": "3788741"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 150,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "925496",
+          "Duration": 191756,
+          "Used gas": "925496"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4032463",
+          "Duration": 69543,
+          "Used gas": "4032463"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 160,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "954874",
+          "Duration": 171306,
+          "Used gas": "954874"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4276591",
+          "Duration": 67858,
+          "Used gas": "4276591"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 170,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "984501",
+          "Duration": 48902,
+          "Used gas": "984501"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4520659",
+          "Duration": 63324,
+          "Used gas": "4520659"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 171,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "987449",
+          "Duration": 36958,
+          "Used gas": "987449"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4543183",
+          "Duration": 83246,
+          "Used gas": "4543183"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 172,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "990403",
+          "Duration": 55681,
+          "Used gas": "990403"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4568019",
+          "Duration": 326454,
+          "Used gas": "4568019"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 173,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "993351",
+          "Duration": 137518,
+          "Used gas": "993351"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4591371",
+          "Duration": 94603,
+          "Used gas": "4591371"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 174,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "996299",
+          "Duration": 20986,
+          "Used gas": "996299"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4614992",
+          "Duration": 287856,
+          "Used gas": "4614992"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 175,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "999254",
+          "Duration": 348857,
+          "Used gas": "999254"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4638740",
+          "Duration": 163200,
+          "Used gas": "4638740"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 176,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "1002202",
+          "Duration": 175821,
+          "Used gas": "1002202"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4662084",
+          "Duration": 32359,
+          "Used gas": "4662084"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 177,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "1005150",
+          "Duration": 110824,
+          "Used gas": "1005150"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4685628",
+          "Duration": 189720,
+          "Used gas": "4685628"
+        }
+      }
+    ]
+  },
+  {
+    "Number of rules": 178,
+    "Tests": [
+      {
+        "Policy Information Point (PIP)": {
+          "Estimated gas": "1007848",
+          "Duration": 90522,
+          "Used gas": "1007848"
+        },
+        "Policy Decision Point (PDP)": {
+          "Estimated gas": "4711929",
+          "Duration": 93901,
+          "Used gas": "4711929"
+        }
+      }
+    ]
+  }
+]
